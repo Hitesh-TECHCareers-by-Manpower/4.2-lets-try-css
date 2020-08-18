@@ -1,1 +1,20 @@
-html { background-color: aquamarine;}
+html { background-color: white;}
+
+/*
+    Navigation links
+*/
+nav a {
+    text-decoration: none; /* Gets rid of the underline*/
+    color: rgb(165, 211, 165);
+
+}
+
+/* the "hover" state of any anchor (a) inside of a nav. */
+nav a:hover {
+    color: blue;
+    /* color: #0000dd; Hex Colour */
+}
+/* "direct descendant" - ul must be directly inside the NAV */
+nav > ul {
+    list-style-type: square;
+}
