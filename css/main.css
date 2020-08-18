@@ -1,20 +1,38 @@
 
+/* this is not a selector we are defining a font that the */
+
+@font-face {
+    font-family: 'Cherry Monospace-Light';
+    src: url( '../fonts/cherry-monospace/cherry\ Monospace-Light.ttf');
+    src: url( '../fonts/cherry-monospace/cherry\ Monospace-Light.ttf') format( 'truetype' );
+    font-weight: normal;  /* Thickness: how bold or light is it? */
+    font-weight: normal;  /* is it italic? */
+}
+
+/* Heading */
+h1 {
+    font-family: 'Cherry Monospace-Light', 'Courier New', courier, monospace;
+}
 /*
     Navigation links
 */
+
+
+/* "direct descendant" - ul must be directly inside the NAV */
+nav > ul {
+    list-style-type: square;
+}
 nav a {
     text-decoration: none; /* Gets rid of the underline*/
     color: rgb(165, 211, 165);
 
+    /* font family is sued for defining which font should be used here. */
+    font-family: Helvetica, arial, sans-serif, "Trebuchet MS";
 }
+
 
 /* the "hover" state of any anchor (a) inside of a nav. */
 nav a:hover {
     color: blue;
     /* color: #0000dd; Hex Colour */
-}
-
-/* "direct descendant" - ul must be directly inside the NAV */
-nav > ul {
-    list-style-type: square;
 }
