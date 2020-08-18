@@ -56,6 +56,14 @@ nav a {
     font-family: Helvetica, arial, sans-serif, "Trebuchet MS";
 }
 
+body {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
 
 /* the "hover" state of any anchor (a) inside of a nav. */
 nav a:hover {
@@ -74,4 +82,14 @@ nav a:hover {
 h2, p {
     font-family: 'rubik', Helvetica, Arial, sans-serif;
     font-weight: normal;
+}
+
+p:nth-of-type(3) {
+    font-family: 'Red Rose', cursive;
+}
+
+p:nth-of-type(3) img {
+    float: right;
+    margin-left: 32px;
+    
 }
