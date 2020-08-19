@@ -1,0 +1,67 @@
+html { background-color: salmon; }
+
+/* don't do this part in the real world8*/
+
+header h1,
+header form,
+header nav {
+    height: 40vw;
+    background-color: blue;
+}
+header form {background-color: greenyellow;}
+
+header nav {background-color: brown;}
+
+main section,
+main article,
+main form {
+    height: 50vw;
+    background-color: peru;
+}
+main section:nth-of-type(2) { background-color: red;}
+main section:nth-of-type(1) { background-color: sandybrown;}
+main section:nth-of-type(3) { background-color: pink;}
+main article { background-color: royalblue;}
+main form {
+    background-color: green;
+}
+
+footer {
+    height: 20vw;
+    background-color: purple;
+}
+
+/* browser default style reset
+(please look into professionally prepared ones online)
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header h1 {
+    width: 25%;
+}
+
+header form {
+    width: 75%;
+}
+
+header nav {
+    /* width: 100vw; */
+    width: 100%;
+}
+
+@media screen and ( min-width: 600px)
+{
+    
+}
