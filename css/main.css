@@ -109,9 +109,31 @@ mobile-first mindset means using min-width rules only.
 
 @media screen and ( min-width: 400px ) {
 
+    html {background-color: #dddddd;}
+
     p:nth-of-type(3) img {
         max-width: 50%;
         float: right;
         margin-left: 32px;
     } 
+}
+
+/* tablet */
+@media screen and ( min-width: 800px ) {
+
+    html {background-color: #aaaaaa;}
+}
+
+/* large tablet / small laptop */
+
+@media screen and ( min-width: 1024px ) {
+
+    html {background-color: #999;}
+}
+
+/* laptop */
+
+@media screen and ( min-width: 1200px ) {
+
+    html {background-color: #777;}
 }
