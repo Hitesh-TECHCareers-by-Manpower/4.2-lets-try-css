@@ -63,5 +63,46 @@ header nav {
 
 @media screen and ( min-width: 600px)
 {
-    
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main section 
+    {
+        width: 100%;
+    }
+    main section:nth-of-type(2),
+    main section:nth-of-type(3),
+    main article,
+    main form 
+    {
+        width: 50%;
+    }
+}
+
+/* desktop size*/
+
+@media screen and ( min-width: 1024px)
+{
+    /* logo change order */
+    header h1 { order: 1;}
+    header form { 
+        width: 25%;
+        order: 3;
+    }
+    header nav { 
+        width: 50%;
+        order: 2;
+    }
+
+        /* "Service 1" */
+        main section:nth-of-type(2),
+        /* "Service 2" */
+        main section:nth-of-type(3),
+        /* "Service 3" */
+        main section:nth-of-type(4)
+        {
+            width: calc( 100% / 3);
+        }
 }
