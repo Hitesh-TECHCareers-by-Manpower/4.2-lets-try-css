@@ -89,7 +89,29 @@ p:nth-of-type(3) {
 }
 
 p:nth-of-type(3) img {
-    float: right;
-    margin-left: 32px;
+    display: block;
+    width: auto; /* natural width of image */
+    max-width: 85%; /*make sure the image is never wider that the screen /parent element. */
+    margin: 0 auto 1.5em; /* M */
+
+    /* margin has a few different formats we can use to set values.
+    margin 0 auto 1.5em is the same as....
+    margin top 0;
+    margin right auto;
+    margin bottom 1.5em;
+    margin left auto;  */
     
+}
+
+/* media query (often used for setting "break-points".
+mobile-first mindset means using min-width rules only.
+*/
+
+@media screen and ( min-width: 400px ) {
+
+    p:nth-of-type(3) img {
+        max-width: 50%;
+        float: right;
+        margin-left: 32px;
+    } 
 }
