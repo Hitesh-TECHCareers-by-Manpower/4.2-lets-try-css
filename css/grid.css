@@ -1,1 +1,46 @@
 html { background-color: salmon; }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;  
+}
+
+/* colours just for testing*/
+
+h1 { background-color: lightseagreen;}
+#search-form { background-color: lightgreen;}
+nav { background-color: lightsalmon;}
+.hero { background-color: lightslategray;}
+.service-1 { background-color: darkgoldenrod;}
+.service-2 { background-color: darkmagenta;}
+.service-3 { background-color: darkturquoise;}
+
+article { background-color: blue;}
+#contact-form { background-color: yellow;}
+footer { background-color: plum;}
+
+/* lets initialize our grid */
+
+/* much like flex to have grid items / cells, you need to have a container with display: grid. the contents (direct descendents) will follow grid rules. 
+we may be using body for this example.
+but you can put this on most anything */
+
+body {
+    display: grid;
+    /* set columb width one 25% and second 75% */
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 
+        32px /* logo and search row height */
+        64px
+        300px
+        120px
+        120px
+        120px
+        200px
+        260px
+        32px;
+
+}
+
