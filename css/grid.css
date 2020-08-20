@@ -42,5 +42,94 @@ body {
         260px
         32px;
 
+        /* using grid area  */
+        
+        grid-template-areas: 
+            "logo search"
+            "navigation navigation"
+            "hero hero"
+            "service1 service1"
+            "service2 service2"
+            "service3 service3"
+            "additional additional"
+            "contact contact"
+            "footer footer";
+    }
+
+
+
+
+h1 { grid-area: logo;}
+#search-form { grid-area: search;}
+nav { grid-area: navigation;}
+.hero { grid-area: hero;}
+.service-1 { grid-area: service1;}
+.service-2 { grid-area: service2;}
+.service-3 { grid-area: service3;}
+article { grid-area: additional;}
+#contact-form { grid-area: contact;}
+footer { grid-area: footer;}
+
+
+
+@media screen and (min-width: 600px)
+{
+    body {
+        display: grid;
+        /* set columb width one 25% and second 75% */
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: 
+            32px /* logo and search row height */
+            32px
+            500px
+            200px
+            180px
+            400px
+            32px;
+
+            grid-template-areas:
+            "logo search search"
+            "navigation navigation navigation"
+            "hero hero hero"
+            "service1 service1 service2"
+            "service3 service3 service3"
+            "additional additional contact"
+            "footer footer footer";
+     
+    }
 }
+
+
+@media screen and (min-width: 1024px)
+{
+    body {
+        display: grid;
+        /* set columb width one 25% and second 75% */
+        grid-template-columns: 
+            calc( 100% / 6 )
+            calc( 100% / 6 )
+            calc( 100% / 6 )
+            calc( 100% / 6 )
+            calc( 100% / 6 )
+            calc( 100% / 6 );
+            
+        grid-template-rows:
+            32px /* logo and search row height */
+            800px
+            200px
+            400px
+            32px;
+
+            grid-template-areas: 
+            "logo       navigation navigation navigation navigation search"
+           
+            "hero       hero    hero hero hero hero"
+            "service1   service1 service2 service2 service3 service3"
+            
+            "additional additional additional contact contact contact"
+            "footer     footer footer footer footer footer";
+     
+    }
+}
+
 
