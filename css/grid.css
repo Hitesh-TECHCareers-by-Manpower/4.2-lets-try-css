@@ -120,6 +120,8 @@ footer { grid-area: footer;}
             400px
             32px;
 
+
+            
             grid-template-areas: 
             "logo       navigation navigation navigation navigation search"
            
